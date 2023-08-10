@@ -42,3 +42,15 @@ window.addEventListener('load', () => {
   newLeagues.fetchLeague();
   CountLeagues();
 });
+
+import HeroDetails from "./HeroDetails";
+
+function Home() {
+  return (
+    <HeroDetails/>
+
+  );
+}
+
+const header = document.querySelector('header');
+header.appendChild(Home);
